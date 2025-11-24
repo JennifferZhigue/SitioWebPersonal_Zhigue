@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Jenniffer Zhigue</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Formulario de contacto para enviar un mensaje a Jenniffer Zhigue.">
+</head>
+<body>
+    <!-- CABECERA Y NAVEGACIÓN -->
+    <header class="cabecera-principal">
+        <div class="nav-contenedor">
+            <a href="main_page.html" class="logo-nombre">J.M.Z.A. Desarrollo Web</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="main_page.html" class="nav-link">Inicio</a></li>
+                    <li><a href="contact.html" class="nav-link activo">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL: FORMULARIO -->
+    <main class="contenedor-principal">
+        <section class="seccion-card">
+            <h1 class="titulo-seccion" style="text-align: center;">Hablemos y Conectemos</h1>
+            <p style="text-align: center; margin-bottom: 30px;">
+                Usa el siguiente formulario para enviarme cualquier consulta o saludo. ¡Estaré encantada de leerte!
+            </p>
+
+            <form action="process_contact.php" method="POST" class="formulario-contacto">
+                
+                <div class="grupo-control">
+                    <label for="nombre_usuario" class="etiqueta-form requerido">
+                        Nombre y Apellido
+                    </label>
+                    <input type="text" id="nombre_usuario" name="nombre_usuario" class="campo-texto" placeholder="Ej: Milagros Vargas" maxlength="100" required>
+                </div>
+                
+                <div class="grupo-control">
+                    <label for="correo_usuario" class="etiqueta-form requerido">
+                        Correo Electrónico
+                    </label>
+                    <input type="email" id="correo_usuario" name="correo_usuario" class="campo-texto" placeholder="Ej: miliv@gmail.com" maxlength="100" required>
+                </div>
+                
+                <div class="grupo-control">
+                    <label for="mensaje_usuario" class="etiqueta-form requerido">
+                        Mensaje
+                    </label>
+                    <textarea id="mensaje_usuario" name="mensaje_usuario" class="campo-texto" rows="6" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                </div>
+
+                <p style="text-align: right; font-size: 0.9em; margin-top: -10px; margin-bottom: 20px;">
+                    <span class="requerido-simbolo"></span> Campos obligatorios
+                </p>
+                
+                <button type="submit" name="enviar_mensaje" class="btn-enviar">Enviar Mensaje</button>
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="pie-pagina">
+        <p>&copy; 2025 Jenniffer Zhigue Armijos. Sitio Web Personal. Desarrollado con 💙.</p>
+    </footer>
+
+</body>
+</html>
