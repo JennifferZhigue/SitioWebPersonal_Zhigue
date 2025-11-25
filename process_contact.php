@@ -65,10 +65,10 @@ $datos_conex->close();
     <!-- CABECERA Y NAVEGACIÓN -->
     <header class="cabecera-principal">
         <div class="nav-contenedor">
-            <a href="main_page.html" class="logo-nombre">J.M.Z.A. Desarrollo Web</a>
+            <a href="index.html" class="logo-nombre">J.M.Z.A. Desarrollo Web</a>
             <nav>
                 <ul class="nav-menu">
-                    <li><a href="main_page.html" class="nav-link">Inicio</a></li>
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
                     <li><a href="contact.html" class="nav-link">Contacto</a></li>
                 </ul>
             </nav>
