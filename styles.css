@@ -116,7 +116,7 @@ h1, h2, h3 {
     display: inline-block;
 }
 
-/* Biografía (main_page.html) */
+/* Biografía (index.html) */
 .perfil-grid {
     display: grid;
     grid-template-columns: 1fr; 
